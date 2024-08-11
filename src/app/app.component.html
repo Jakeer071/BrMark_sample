@@ -1,0 +1,57 @@
+<!-- <div class="header">
+  <div class="brandmark-logo">
+    <h1>BRAND<span>MARK</span></h1>
+  </div>
+  <div class="hamburger-menu">
+    <div class="menu-icon"></div>
+    <div class="menu-icon"></div>
+    <div class="menu-icon"></div>
+  </div>
+</div>
+
+<div class="main-content">
+  <h2>Create a unique, professional logo for your business</h2>
+  <p>Kickstart your brand with business card designs, social media graphics, app icons, letterheads, and more.</p>
+</div> -->
+<div class="header">
+  <div class="logo">BRANDMARK</div>
+  <div class="hamburger-menu" (click)="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+
+<div class="sidebar" [class.active]="menuActive">
+  <div class="close-menu" (click)="toggleMenu()">X</div>
+  <ul>
+    <li>Menu</li>
+    <li>Tools</li>
+    <li>Pricing</li>
+    <li>Support</li>
+    <li>Login</li>
+  </ul>
+</div>
+
+<div class="main-content">
+  <h1>Create a unique, professional logo for your business</h1>
+  <p>Kickstart your brand with business card designs, social media graphics, app icons, letterheads, and more</p>
+  <button class="custom-button" (click)="onButtonClick()">Create my logo</button>
+
+  <!-- Image Carousel -->
+  <div class="image-carousel">
+    <div *ngFor="let carousel of getResponsiveCarousels()">
+      <img *ngFor="let image of carousel" [src]="image" [class.active]="carousel.indexOf(image) === currentImageIndex">
+    </div>
+  </div>
+</div>
+<div class="weather-widget" *ngIf="weather">
+  <h2>Current Weather in Bangalore</h2>
+  <p>{{ weather.name }}</p>
+  <p>{{ weather.weather[0].description | titlecase }}</p>
+  <p>Temperature: {{ weather.main.temp }} &deg;C</p>
+  <p>Humidity: {{ weather.main.humidity }}%</p>
+  <p>Wind Speed: {{ weather.wind.speed }} m/s</p>
+</div>
+<router-outlet></router-outlet>
+

@@ -1,0 +1,227 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 189px;
+    background-color: #f8bf57;
+  }
+  
+  /* BrandMark logo styling */
+  .brandmade-logo h1 {
+    /* font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+     */
+    font-size: 76px;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 242px;
+  }
+  
+  /* .brandmade-logo span {
+    color: #000;
+  } */
+  
+  /* Hamburger menu styling */
+  .hamburger-menu {
+    cursor: pointer;
+  }
+  
+  .menu-icon {
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    margin: 5px 0;
+  }
+  
+  /* Main content styling */
+  .main-content {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  .main-content h1 {
+    font-size: 3.5rem;
+  }
+  .main-content h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .main-content p {
+    font-size: 22px;
+    color: #666;
+  }
+  @media (max-width: 1400px) {
+    .header {
+      flex-direction: column;
+    }
+  
+    .main-content {
+      padding: 20px;
+    }
+  }
+  /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+  } */
+  
+  .logo {
+    font-size: 100px;
+    font-weight: bold;
+  }
+  
+  .hamburger-menu {
+    /* display: none; */
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger-menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+  }
+  
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 208px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background-color: #333;
+    padding: 20px;
+    transition: 0.3s;
+    font-size: 33px;
+  }
+  
+  .sidebar.active {
+    right: 0;
+  }
+  
+  .close-menu {
+    align-self: flex-end;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .sidebar ul li {
+    padding: 15px 0;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .main-content {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .custom-button {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 34px;
+    margin-top:113px
+  }
+  
+  .image-carousel {
+    display: flex;
+    justify-content: center;
+    margin-top: 262px;
+  }
+  
+  .image-carousel img {
+    display: none;
+    max-width: 100%;
+    height: 800px;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .image-carousel img.active {
+    display: block;
+    opacity: 1;
+  }
+  
+  @media (max-width: 1400px) {
+    .header {
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: static;
+      display: none;
+    }
+  
+    .main-content {
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .custom-button {
+      width: 100%;
+      padding: 15px;
+      font-size: 18px;
+    }
+  
+    .image-carousel {
+      height: auto;
+      padding: 10px;
+    }
+  
+    .carousel-images img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  
+    .hamburger-menu {
+      display: block;
+    }
+  
+    .sidebar.active {
+      display: block;
+    }
+  }
+  .weather-widget {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .weather-widget h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .weather-widget p {
+    font-size: 18px;
+    margin: 5px 0;
+  }
